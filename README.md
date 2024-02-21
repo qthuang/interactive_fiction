@@ -2,7 +2,7 @@
 
 # Analysis
 
-Author of Part 2: Qintian Hunag, Yuan Yuan
+Part 2 Created by Qintian Hunag, Yuan Yuan
 
 ## Part 1
 
