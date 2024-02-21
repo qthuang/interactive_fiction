@@ -1,6 +1,9 @@
 
 HW 2 Created by Qintian Hunag, Yuan Yuan
 
+Course Website: https://interactive-fiction-class.org/index.html
+Game Adapted from Action Castle: https://memento-mori.com/pdf/parsely-preview-n-play-edition
+
 ## Part 1
 
 The playthrough was actually smooth. There are definitely hallucinations. For example, in the system setting, we specifically stated that the parser should speak like John Wick, but not treat the player as John Wick. However, the parser was not able to remember it, and there are multiple times that it called me or the user as the John Wick (saying things like "You, John Wick"). We suspect this could be due to its data about John Wick. Probably most of the data it was trained on described John Wick as someone else, rather than speaking as John Wick. Thus, the parser was not able to understand what it means to speak like John Wick. Another guess is that the instructions to the system and the input of the user are compiled together, so the model itself cannot distinguish the person of the narration.
