@@ -1,8 +1,5 @@
 
-
-# Analysis
-
-Part 2 Created by Qintian Hunag, Yuan Yuan
+HW 2 Created by Qintian Hunag, Yuan Yuan
 
 ## Part 1
 
