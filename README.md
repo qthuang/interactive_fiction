@@ -2,9 +2,11 @@
 
 # Analysis
 
+Author of Part 2: Qintian Hunag, Yuan Yuan
+
 ## Part 1
 
-The playthrough was actually smooth. There are definitely hallucinations. For example, in the system setting, I specifically stated that I want the parser to speak like John Wick, but not treat the user or me as John Wick. However, the parser was not able to remember it, and there are multiple times that it called me or the user as the John Wick (saying things like "You, John Wick"). I suspect this could be due to its data about John Wick. Probably most of the data it was trained on described John Wick as someone else, rather than speaking as John Wick. Thus, the parser was not able to understand what it means to speak like John Wick.
+The playthrough was actually smooth. There are definitely hallucinations. For example, in the system setting, we specifically stated that the parser should speak like John Wick, but not treat the player as John Wick. However, the parser was not able to remember it, and there are multiple times that it called me or the user as the John Wick (saying things like "You, John Wick"). We suspect this could be due to its data about John Wick. Probably most of the data it was trained on described John Wick as someone else, rather than speaking as John Wick. Thus, the parser was not able to understand what it means to speak like John Wick. Another guess is that the instructions to the system and the input of the user are compiled together, so the model itself cannot distinguish the person of the narration.
 
 Other than some hallucinations, like describing non-existent objects and giving me wrong identities, the parser did a pretty good job at generating the content of the games.
 
