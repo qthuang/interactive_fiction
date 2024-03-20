@@ -1,0 +1,943 @@
+{
+    "player": "Kim",
+    "start_at": "Farm",
+    "game_over": false,
+    "game_over_description": "Game Over.",
+    "actions": [],
+    "game_history": [],
+    "characters": [
+        {
+            "name": "Kim",
+            "description": "Kim is an ambitious newcomer to the Town, eager to breathe new life into their grandfather's neglected farm. With a strong resolve and a heart full of dreams, they're ready to tackle the challenges of rural life.",
+            "persona": "As the latest steward of the old family farm, I'm here to turn these overgrown fields into a thriving homestead. I believe in the value of hard work and the power of community. Let's bring this farm back to its former glory together!",
+            "location": "Farm",
+            "goal": "Revitalize the family farm, integrate into the community, and find a deeper connection to the natural world.",
+            "inventory": {}
+        },
+        {
+            "name": "Pierre",
+            "description": "The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.",
+            "persona": "Welcome to Pierre's, the local store. Feel free to take a look around - and let me know if you need anything!",
+            "location": "Town",
+            "goal": "To run a successful local store.",
+            "inventory": {
+                "Store Key": {
+                    "name": "Store Key",
+                    "description": "A small, worn key that looks like it fits a lock in the store.",
+                    "examine_text": "The key is well worn, with a simple, antiquated design. It's incredibly sturdy, showing that it has been in use for a long time. The keychain it's on simply reads 'Pierre's', clearly the key to something important in this store.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "commands": []
+                },
+                "Bag of Seeds": {
+                    "name": "Bag of Seeds",
+                    "description": "A small burlap bag filled with various types of seeds.",
+                    "examine_text": "The rough texture of the burlap bag is familiar in your hands. Opening it reveals an assortment of different types of neatly stored seeds. Each one is carefully marked with a different crop that can be grown in the local fields.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                },
+                "Price List": {
+                    "name": "Price List",
+                    "description": "A list of prices for various items sold in the store.",
+                    "examine_text": "Upon closer inspection, the piece of parchment is printed with black ink. It has been divided into two neatly written columns. The left column lists a range of goods, from food to tools, including labour costs. The right column contains corresponding monetary amounts, indicating the price Pierre asks for each one. The writing is precise and easily readable, suggesting the list is used often and maintained regularly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {
+            "name": "Harvey",
+            "description": "Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.",
+            "persona": "As a doctor, I aim to keep everyone in town healthy. Make sure you come in for a check-up every now and then.",
+            "location": "Town",
+            "goal": "Provide quality medical service to the local residents.",
+            "inventory": {
+                "stethoscope": {
+                    "name": "Stethoscope",
+                    "description": "A silver, coiled-up stethoscope.",
+                    "examine_text": "Upon closer examination, you notice that the stethoscope has seen many uses, the silver slightly worn and polished over time. The black rubber tubing is still flexible and the dual-sided chest piece is exquisitely detailed. You can confidently surmise it belonged to a professional.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "commands": []
+                },
+                "box of medical supplies": {
+                    "name": "Box of Medical Supplies",
+                    "description": "A sturdy wooden box full of various medical supplies.",
+                    "examine_text": "From your initial glance, Harvey's box of medical supplies seems to contain almost everything a good doctor could need. Thermometers, band-aids, wraps, perhaps even a few colourful lollipops that Harvey occasionally hands out. They look clean and neatly organized.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                },
+                "book of medical textbooks": {
+                    "name": "Book of Medical Textbooks",
+                    "description": "A thick, worn book with 'Medical Texts' scrawled on the cover.",
+                    "examine_text": "Opening the book of medical text, you notice how thoroughly lived-in the pages are, filled with notes and highlighted sections. It's filled with all the knowledge a dedicated medical practitioner like Harvey would need - conditions, treatments, anatomy sketches and biochemical formulae.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {
+            "name": "Gus",
+            "description": "A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.",
+            "persona": "Nothing beats the ambiance at the saloon! I'm always serving up cold drinks and hot meals.",
+            "location": "Town",
+            "goal": "To run a hospitable and lively saloon.",
+            "inventory": {
+                "Menu": {
+                    "name": "Menu",
+                    "description": "A high quality, leather-bound menu filled with tidbits of delight",
+                    "examine_text": "The Saloon's menu is a beautiful leather-bound book that looks well-loved. It includes a range of delicious food items and refreshing drinks. The pages are slightly grease-stained and there are small notes penciled in the margins.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                },
+                "Bottle of Whiskey": {
+                    "name": "Bottle of Whiskey",
+                    "description": "A modest bottle of whiskey, often shared amongst friends",
+                    "examine_text": "Upon closer inspection, the whiskey bottle is full to the brim, with a simple wax seal covering the cap. The amber liquid swirls invitingly inside the glass bottle as you tip it ever-so-slightly. There are scuff marks along the bottom half of the bottle, indicating shared toasts.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                },
+                "Group Photo": {
+                    "name": "Group Photo",
+                    "description": "A photo of the regulars at the saloon, smiling and enjoying their time together",
+                    "examine_text": "The photo is slightly faded as if exposed to sunlight and lovingly handled. The regulars at the saloon are posing and smiling, drinks in hand, the ambiance of their smiles feeling almost tangible. It seems to have been taken many years ago, and the people in the photo seem to have weathered the years together.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": []
+                }
+            }
+        },
+        {
+            "name": "Morris",
+            "description": "A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.",
+            "persona": "Sustainability is key. With JojaMart, we aim to serve every need the town may have.",
+            "location": "Town",
+            "goal": "To make JojaMart the biggest and most versatile shop in the valley.",
+            "inventory": {
+                "Slogan Notebook": {
+                    "name": "Slogan Notebook",
+                    "description": "A sleek, unmarked, black notebook with fine paper that barely glints in the sunlight.",
+                    "examine_text": "The notebook's sharp and minimal design captures the essence of modern marketing. Once opened, the pages reveal what looks like hundreds of perfect slogans, each centered and presented in a new sequence. Seemingly random, but upon closer inspection, a carefully planned evolution.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": [],
+                    "location": "Leah'S Cottage"
+                },
+                "Blueprints": {
+                    "name": "Blueprints",
+                    "description": "A giant roll of paper filled with complex diagrams and structures detailing new store layouts.",
+                    "examine_text": "The blueprints detail innovative new store layouts, designed to fulfill every product need efficiently and attractively. They reveal keenly envisioned concepts for enhancing customer experiences within stores, such as interactive technology additions and dedicated brand experience sections.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": [],
+                    "location": "Leah'S Cottage"
+                },
+                "Laptop": {
+                    "name": "Laptop",
+                    "description": "A sleek black laptop computer with a single unadorned apple silhouette on the outside and an ironclad operating system on the inside.",
+                    "examine_text": "The laptop has a pristine black matte finish. Upon opening it, you find a high resolution display and a keyboard that is both subtle in its touch and responsive. Several tabs are open, revealing finance reports, marketing strategies, and employee engagement content.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "commands": [],
+                    "location": "Leah'S Cottage"
+                }
+            }
+        },
+        {
+            "name": "Wizard",
+            "description": "The Wizard is a wise and old magician who lives alone in the tower. He is known for his great wisdom and the magical powers he possesses.",
+            "persona": "I hold the key to unlocking the mysteries of the valley. Are you brave enough to seek my counsel?",
+            "location": "Forest",
+            "goal": "The Wizard's main goal is to maintain peace and order in the valley using his magical powers.",
+            "inventory": {
+                "Crystal Ball": {
+                    "name": "Crystal Ball",
+                    "description": "An object used for performing divinations",
+                    "examine_text": "The crystal ball is perfectly spherical and crystal clear. When you look into it, you swear you can see fleeting images of people and places",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "commands": [],
+                    "location": "Elves's Lair"
+                },
+                "Wizard's Staff": {
+                    "name": "Wizard's Staff",
+                    "description": "A well-carved staff that appears to be made from a magical tree",
+                    "examine_text": "The staff is inscribed with runes of an ancient language unknown to many. It gives off a faintly luminescent glow",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "commands": [],
+                    "location": "Elves's Lair"
+                }
+            }
+        }
+    ],
+    "locations": [
+        {
+            "name": "Farm",
+            "description": "The farm consists of a large wheat field with a few silos, barns and scarecows visible. Near the entrance of the farm, little patches of flowers are seen. The chickens sheds are kept far from the main buildings for obvious reason.",
+            "background": "The farming family living here is wealthy. They rotate their flaunt their vast lands like it's their personal showcase. The area is so big that most folk class it as it's own town.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "east": "Town",
+                "south": "Forest"
+            },
+            "connections": {
+                "east": "Town",
+                "south": "Forest"
+            },
+            "items": {
+                "Wheat Bundle": {
+                    "name": "Wheat Bundle",
+                    "description": "A beautifully harvested bundle of wheat.",
+                    "examine_text": "The wheat is golden brown, tied up in a perfect bundle. It feels light and fluffy, and if you listen closely you can almost hear the tell-tale rustling sound that means it's been harvested perfectly.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farm"
+                },
+                "Farmers Tools": {
+                    "name": "Farmers Tools",
+                    "description": "A set of robust, iron farming tools.",
+                    "examine_text": "Used for hours on end, they are stained with the earth of the fields. Even with that, they are sturdy and well-kept. There's a shovel, a pitchfork and a sickle.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Farm"
+                },
+                "Chicken Egg": {
+                    "name": "Chicken Egg",
+                    "description": "A fresh, hen-laid chicken egg.",
+                    "examine_text": "The egg is a perfect ovoid, with a smooth, white shell. It's still warm to the touch. You can see the bright yellow yolk inside if you hold it up to the light.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farm"
+                },
+                "Potters Pot": {
+                    "name": "Potters Pot",
+                    "description": "A large, clay pot meant for making pottery.",
+                    "examine_text": "The pot is large and round, with a subtle terracotta color. Inside it, the clay is still soft. On closer look, one can see it's been used before, signs of the last firing are still there.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Farm"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Town",
+            "description": "Town is a bustling place on any given day.  With a farmer's market square in the center, there are a few stores and clinics set up as well.   It's a simple setup, a few dirt packing roads web about through some woods leading deeper into the town.  People can be seen visiting, walking or peddling to and from their favorite places in town.",
+            "background": "The central area for the local townsfolk.  Town provides an area for people to visit and do their business in one area.  People come from miles around to get seeds and wares and many other goods from the unique stores that call it home.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "west": "Farm",
+                "south": "Beach",
+                "north": "Mountain"
+            },
+            "connections": {
+                "west": "Farm",
+                "south": "Beach",
+                "north": "Mountain"
+            },
+            "items": {
+                "Homemade Pie": {
+                    "name": "Homemade Pie",
+                    "description": "A fresh, delicious pie cooked by the local bakery.",
+                    "examine_text": "The pie crust is a perfect golden brown, and you can smell the sweet aroma of fresh berries wafting from it. The filling bubbles up through small slits in the crust, tempting you to take a bite.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Town"
+                },
+                "Watering Can": {
+                    "name": "Watering Can",
+                    "description": "A sturdy metal watering can",
+                    "examine_text": "The can is old, but it is sturdy, well-tended and without rust. A lovely patina of tarnish marks the item. The handle is worn from years of use, but still comfortable.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Town"
+                },
+                "Map of the Local Market": {
+                    "name": "Map of the Local Market",
+                    "description": "A detailed map of the farmer's market square.",
+                    "examine_text": "The map indicates the different stalls in the market square, as well as signifying any potentially interesting or unique items at each. It's a bit worn around the edges but still perfectly usable.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Town"
+                },
+                "Sack of Fresh Vegetables": {
+                    "name": "Sack of Fresh Vegetables",
+                    "description": "A sack full of locally grown vegetables.",
+                    "examine_text": "The sack is bulging with brightly-colored produce. A head of lettuce, a bundle of carrots, and some juicy tomatoes. All grown locally and guaranteed fresh.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Town"
+                },
+                "Farmhouse Door Key": {
+                    "name": "Farmhouse Door Key",
+                    "description": "A small, shiny key. Probably for the door of one of the farmhouses nearby.",
+                    "examine_text": "The key is small and well made, with a polished finish. It's likely for a lock that's also maintained with a high degree of care. The key feels heavy and capable in your hand.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Town"
+                }
+            },
+            "characters": {
+                "Pierre": {
+                    "name": "Pierre",
+                    "description": "The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.",
+                    "persona": "Welcome to Pierre's, the local store. Feel free to take a look around - and let me know if you need anything!",
+                    "location": "Town",
+                    "goal": "To run a successful local store.",
+                    "inventory": {
+                        "Store Key": {
+                            "name": "Store Key",
+                            "description": "A small, worn key that looks like it fits a lock in the store.",
+                            "examine_text": "The key is well worn, with a simple, antiquated design. It's incredibly sturdy, showing that it has been in use for a long time. The keychain it's on simply reads 'Pierre's', clearly the key to something important in this store.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "Bag of Seeds": {
+                            "name": "Bag of Seeds",
+                            "description": "A small burlap bag filled with various types of seeds.",
+                            "examine_text": "The rough texture of the burlap bag is familiar in your hands. Opening it reveals an assortment of different types of neatly stored seeds. Each one is carefully marked with a different crop that can be grown in the local fields.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Price List": {
+                            "name": "Price List",
+                            "description": "A list of prices for various items sold in the store.",
+                            "examine_text": "Upon closer inspection, the piece of parchment is printed with black ink. It has been divided into two neatly written columns. The left column lists a range of goods, from food to tools, including labour costs. The right column contains corresponding monetary amounts, indicating the price Pierre asks for each one. The writing is precise and easily readable, suggesting the list is used often and maintained regularly.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Harvey": {
+                    "name": "Harvey",
+                    "description": "Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.",
+                    "persona": "As a doctor, I aim to keep everyone in town healthy. Make sure you come in for a check-up every now and then.",
+                    "location": "Town",
+                    "goal": "Provide quality medical service to the local residents.",
+                    "inventory": {
+                        "stethoscope": {
+                            "name": "Stethoscope",
+                            "description": "A silver, coiled-up stethoscope.",
+                            "examine_text": "Upon closer examination, you notice that the stethoscope has seen many uses, the silver slightly worn and polished over time. The black rubber tubing is still flexible and the dual-sided chest piece is exquisitely detailed. You can confidently surmise it belonged to a professional.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": []
+                        },
+                        "box of medical supplies": {
+                            "name": "Box of Medical Supplies",
+                            "description": "A sturdy wooden box full of various medical supplies.",
+                            "examine_text": "From your initial glance, Harvey's box of medical supplies seems to contain almost everything a good doctor could need. Thermometers, band-aids, wraps, perhaps even a few colourful lollipops that Harvey occasionally hands out. They look clean and neatly organized.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "book of medical textbooks": {
+                            "name": "Book of Medical Textbooks",
+                            "description": "A thick, worn book with 'Medical Texts' scrawled on the cover.",
+                            "examine_text": "Opening the book of medical text, you notice how thoroughly lived-in the pages are, filled with notes and highlighted sections. It's filled with all the knowledge a dedicated medical practitioner like Harvey would need - conditions, treatments, anatomy sketches and biochemical formulae.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Gus": {
+                    "name": "Gus",
+                    "description": "A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.",
+                    "persona": "Nothing beats the ambiance at the saloon! I'm always serving up cold drinks and hot meals.",
+                    "location": "Town",
+                    "goal": "To run a hospitable and lively saloon.",
+                    "inventory": {
+                        "Menu": {
+                            "name": "Menu",
+                            "description": "A high quality, leather-bound menu filled with tidbits of delight",
+                            "examine_text": "The Saloon's menu is a beautiful leather-bound book that looks well-loved. It includes a range of delicious food items and refreshing drinks. The pages are slightly grease-stained and there are small notes penciled in the margins.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Bottle of Whiskey": {
+                            "name": "Bottle of Whiskey",
+                            "description": "A modest bottle of whiskey, often shared amongst friends",
+                            "examine_text": "Upon closer inspection, the whiskey bottle is full to the brim, with a simple wax seal covering the cap. The amber liquid swirls invitingly inside the glass bottle as you tip it ever-so-slightly. There are scuff marks along the bottom half of the bottle, indicating shared toasts.",
+                            "properties": {
+                                "is_container": true,
+                                "is_drink": true,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        },
+                        "Group Photo": {
+                            "name": "Group Photo",
+                            "description": "A photo of the regulars at the saloon, smiling and enjoying their time together",
+                            "examine_text": "The photo is slightly faded as if exposed to sunlight and lovingly handled. The regulars at the saloon are posing and smiling, drinks in hand, the ambiance of their smiles feeling almost tangible. It seems to have been taken many years ago, and the people in the photo seem to have weathered the years together.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": []
+                        }
+                    }
+                },
+                "Morris": {
+                    "name": "Morris",
+                    "description": "A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.",
+                    "persona": "Sustainability is key. With JojaMart, we aim to serve every need the town may have.",
+                    "location": "Town",
+                    "goal": "To make JojaMart the biggest and most versatile shop in the valley.",
+                    "inventory": {
+                        "Slogan Notebook": {
+                            "name": "Slogan Notebook",
+                            "description": "A sleek, unmarked, black notebook with fine paper that barely glints in the sunlight.",
+                            "examine_text": "The notebook's sharp and minimal design captures the essence of modern marketing. Once opened, the pages reveal what looks like hundreds of perfect slogans, each centered and presented in a new sequence. Seemingly random, but upon closer inspection, a carefully planned evolution.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Leah'S Cottage"
+                        },
+                        "Blueprints": {
+                            "name": "Blueprints",
+                            "description": "A giant roll of paper filled with complex diagrams and structures detailing new store layouts.",
+                            "examine_text": "The blueprints detail innovative new store layouts, designed to fulfill every product need efficiently and attractively. They reveal keenly envisioned concepts for enhancing customer experiences within stores, such as interactive technology additions and dedicated brand experience sections.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": true,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Leah'S Cottage"
+                        },
+                        "Laptop": {
+                            "name": "Laptop",
+                            "description": "A sleek black laptop computer with a single unadorned apple silhouette on the outside and an ironclad operating system on the inside.",
+                            "examine_text": "The laptop has a pristine black matte finish. Upon opening it, you find a high resolution display and a keyboard that is both subtle in its touch and responsive. Several tabs are open, revealing finance reports, marketing strategies, and employee engagement content.",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": true
+                            },
+                            "commands": [],
+                            "location": "Leah'S Cottage"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Village"
+        },
+        {
+            "name": "Forest",
+            "description": "The forest appears like a living thing to some as the wind sways the tree limbs all directions.  There is a red fox near by foraging for food, skittish at the humans nearby.  The ground is covered with dead leaves and branches.",
+            "background": "The forest is a point of interest for the humans, somewhat, but the town elder has spoken of its worship prior to the humans' arrival thousands of years ago.  He speaks of the other races appeasing the forest to prevent the creatures from coming out and attacking them.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Farm"
+            },
+            "connections": {
+                "north": "Farm"
+            },
+            "items": {
+                "Ancient Oak Staff": {
+                    "name": "Ancient Oak Staff",
+                    "description": "A staff made from the wood of an old oak tree.",
+                    "examine_text": "The staff stands taller than you, with potent symbols and runes etched into the wood, emanating a hum of raw power that is inexplicably calming. It has a comfortable grip refined by years of hand use.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Forest"
+                },
+                "Fox Frond": {
+                    "name": "Fox Frond",
+                    "description": "A wild sprig of Fox Frond.",
+                    "examine_text": "The frond has a soft, feathery texture and a distinct purplish-green color. It's known for its soothing properties when brewed as a tea.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": true,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forest"
+                },
+                "Fallen Acorn": {
+                    "name": "Fallen Acorn",
+                    "description": "A single, nut brown acorn. It's been separated from its tree.",
+                    "examine_text": "It is a small, hard shelled nut that is known for being a treasure to woodland creatures. It is a primary food source in the forest.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forest"
+                },
+                "Mystical Altar": {
+                    "name": "Mystical Altar",
+                    "description": "A mysterious stone alter hidden in the forest.",
+                    "examine_text": "This altar is surrounded by symbols and engravings in a language that you can't understand. Its surface is stained by what appears to be dried blood.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Forest"
+                }
+            },
+            "characters": {
+                "Wizard": {
+                    "name": "Wizard",
+                    "description": "The Wizard is a wise and old magician who lives alone in the tower. He is known for his great wisdom and the magical powers he possesses.",
+                    "persona": "I hold the key to unlocking the mysteries of the valley. Are you brave enough to seek my counsel?",
+                    "location": "Forest",
+                    "goal": "The Wizard's main goal is to maintain peace and order in the valley using his magical powers.",
+                    "inventory": {
+                        "Crystal Ball": {
+                            "name": "Crystal Ball",
+                            "description": "An object used for performing divinations",
+                            "examine_text": "The crystal ball is perfectly spherical and crystal clear. When you look into it, you swear you can see fleeting images of people and places",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": false,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Elves's Lair"
+                        },
+                        "Wizard's Staff": {
+                            "name": "Wizard's Staff",
+                            "description": "A well-carved staff that appears to be made from a magical tree",
+                            "examine_text": "The staff is inscribed with runes of an ancient language unknown to many. It gives off a faintly luminescent glow",
+                            "properties": {
+                                "is_container": false,
+                                "is_drink": false,
+                                "is_food": false,
+                                "is_gettable": true,
+                                "is_surface": false,
+                                "is_weapon": true,
+                                "is_wearable": false
+                            },
+                            "commands": [],
+                            "location": "Elves's Lair"
+                        }
+                    }
+                }
+            },
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Beach",
+            "description": "The beach is a relaxing spot for many tourists, sitting at the edge of the great lake. The white beach stretches for miles, and sand washes away easily when someone jumps in the lake to find relief from the hot sun. Romantic couples like to watch the moon rise over the lake.",
+            "background": "The beach wasn't always well loved. A few years ago, there was a great storm and the waves wiped away the whole village that was there. People rebuilt it eventually, and many more people came to see the beautiful surroundings. The beach also provided a place of reflection and relaxation. Legends told of the mighty river god whose heart was broken and will not bring in fish for the local fishermen.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "north": "Town"
+            },
+            "connections": {
+                "north": "Town"
+            },
+            "items": {
+                "Sand Pail": {
+                    "name": "Sand Pail",
+                    "description": "A small, plastic pail designed for playing in the sand.",
+                    "examine_text": "The pail is a bright red color and made out of durable plastic. It's a little worn from use, but generally in good condition.",
+                    "properties": {
+                        "is_container": true,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach"
+                },
+                "Sun Hat": {
+                    "name": "Sun Hat",
+                    "description": "A wide-brimmed hat designed to protect from the sun's harsh rays.",
+                    "examine_text": "The hat is made from a light, straw-like material and has a wide brim to block the sun. A thin ribbon is wrapped around it as a decorative touch.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Beach"
+                },
+                "Picnic Blanket": {
+                    "name": "Picnic Blanket",
+                    "description": "A large blanket perfect for picnics or lounging on the beach.",
+                    "examine_text": "The blanket is quite large and made out of a soft material. It's colorful with a cheery pattern that screams 'picnic'. It's slightly sandy, but otherwise clean.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": false,
+                        "is_wearable": true
+                    },
+                    "location": "Beach"
+                },
+                "Lifeguard Buoy": {
+                    "name": "Lifeguard Buoy",
+                    "description": "A large, orange buoy used by lifeguards for rescue purposes.",
+                    "examine_text": "The buoy is bright orange and made of a durable, hard plastic. 'Lifeguard' is printed on the side in bold, white letters. It appears to have been used in practice only, as it's in excellent condition.",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": false,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Beach"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        },
+        {
+            "name": "Mountain",
+            "description": "The mountain rises up into the clouds. Cold and stone, a few hardy trees cling to its face here and there. Mountain goats have been known to traverse the almost completely vertical face.",
+            "background": "There is no known path to the top of the mountain, and all attempts to climb it have failed. Only the bravest have dared to go more than a few feet up the mountain, and they never return. Some say it is goblin territory while others say there is something far worse living within the mountain. But most believe it is Moon Dog's summer home.",
+            "commands": [],
+            "properties": {},
+            "blocks": {},
+            "travel_descriptions": {
+                "south": "Town"
+            },
+            "connections": {
+                "south": "Town"
+            },
+            "items": {
+                "Mountain Rock": {
+                    "name": "Mountain Rock",
+                    "description": "A large, solid rock from the mountain",
+                    "examine_text": "This rock from the mountain is heavy and sturdy. Whilst it is just a rock, it has a certain beauty to it. You can see the traits of the mountain in it, from the way it is tough and resilient",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": true,
+                        "is_weapon": true,
+                        "is_wearable": false
+                    },
+                    "location": "Mountain"
+                },
+                "Mountain Goat Horn": {
+                    "name": "Mountain Goat Horn",
+                    "description": "A discarded mountain goat horn",
+                    "examine_text": "The curved, pointy artifact is a trophy of sorts. The mountain goat it belonged to was truly fearless. There's a hint of lacquer, a detail not visible from afar",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": false,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": true,
+                        "is_wearable": true
+                    },
+                    "location": "Mountain"
+                },
+                "Pine Cone": {
+                    "name": "Pine Cone",
+                    "description": "A large forest pine cone, still fresh from the tree",
+                    "examine_text": "A large sappy pine cone, filled with healthy pine nuts. It is a natural, easy-to-carry source of nutrition when in need",
+                    "properties": {
+                        "is_container": false,
+                        "is_drink": false,
+                        "is_food": true,
+                        "is_gettable": true,
+                        "is_surface": false,
+                        "is_weapon": false,
+                        "is_wearable": false
+                    },
+                    "location": "Mountain"
+                }
+            },
+            "characters": {},
+            "has_been_visited": false,
+            "category": "Lake"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "role": "user",
+        "content": "look"
+    },
+    {
+        "role": "assistant",
+        "content": "MOUNTAIN\nThe mountain rises up into the clouds. Cold and stone, a few hardy trees cling to its face here and there. Mountain goats have been known to traverse the almost completely vertical face.\nExits:\n * South to Town\n\nYou see:\n * Mountain Rock - A large, solid rock from the mountain\n * Mountain Goat Horn - A discarded mountain goat horn\n * Pine Cone - A large forest pine cone, still fresh from the tree\n\n"
+    },
+    {
+        "role": "user",
+        "content": "go south"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Town Town"
+    },
+    {
+        "role": "assistant",
+        "content": "TOWN\nTown is a bustling place on any given day.  With a farmer's market square in the center, there are a few stores and clinics set up as well.   It's a simple setup, a few dirt packing roads web about through some woods leading deeper into the town.  People can be seen visiting, walking or peddling to and from their favorite places in town.\nExits:\n * West to Farm\n * South to Beach\n * North to Mountain\n\nYou see:\n * Homemade Pie - A fresh, delicious pie cooked by the local bakery.\n * Watering Can - A sturdy metal watering can\n * Map of the Local Market - A detailed map of the farmer's market square.\n * Sack of Fresh Vegetables - A sack full of locally grown vegetables.\n * Farmhouse Door Key - A small, shiny key. Probably for the door of one of the farmhouses nearby.\nCharacters:\n * Pierre - The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.\n * Harvey - Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.\n * Gus - A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.\n * Morris - A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.\n"
+    },
+    {
+        "role": "user",
+        "content": "talk to Harvey"
+    },
+    {
+        "role": "user",
+        "content": "go south"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Beach Beach"
+    },
+    {
+        "role": "assistant",
+        "content": "BEACH\nThe beach is a relaxing spot for many tourists, sitting at the edge of the great lake. The white beach stretches for miles, and sand washes away easily when someone jumps in the lake to find relief from the hot sun. Romantic couples like to watch the moon rise over the lake.\nExits:\n * North to Town\n\nYou see:\n * Sand Pail - A small, plastic pail designed for playing in the sand.\n * Sun Hat - A wide-brimmed hat designed to protect from the sun's harsh rays.\n * Picnic Blanket - A large blanket perfect for picnics or lounging on the beach.\n * Lifeguard Buoy - A large, orange buoy used by lifeguards for rescue purposes.\n\n"
+    },
+    {
+        "role": "user",
+        "content": "go north"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Town Town"
+    },
+    {
+        "role": "assistant",
+        "content": "TOWN\nTown is a bustling place on any given day.  With a farmer's market square in the center, there are a few stores and clinics set up as well.   It's a simple setup, a few dirt packing roads web about through some woods leading deeper into the town.  People can be seen visiting, walking or peddling to and from their favorite places in town.\nExits:\n * West to Farm\n * South to Beach\n * North to Mountain\n\nYou see:\n * Homemade Pie - A fresh, delicious pie cooked by the local bakery.\n * Watering Can - A sturdy metal watering can\n * Map of the Local Market - A detailed map of the farmer's market square.\n * Sack of Fresh Vegetables - A sack full of locally grown vegetables.\n * Farmhouse Door Key - A small, shiny key. Probably for the door of one of the farmhouses nearby.\nCharacters:\n * Pierre - The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.\n * Harvey - Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.\n * Gus - A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.\n * Morris - A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.\n"
+    },
+    {
+        "role": "user",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "look"
+    },
+    {
+        "role": "assistant",
+        "content": "TOWN\nTown is a bustling place on any given day.  With a farmer's market square in the center, there are a few stores and clinics set up as well.   It's a simple setup, a few dirt packing roads web about through some woods leading deeper into the town.  People can be seen visiting, walking or peddling to and from their favorite places in town.\nExits:\n * West to Farm\n * South to Beach\n * North to Mountain\n\nYou see:\n * Homemade Pie - A fresh, delicious pie cooked by the local bakery.\n * Watering Can - A sturdy metal watering can\n * Map of the Local Market - A detailed map of the farmer's market square.\n * Sack of Fresh Vegetables - A sack full of locally grown vegetables.\n * Farmhouse Door Key - A small, shiny key. Probably for the door of one of the farmhouses nearby.\nCharacters:\n * Pierre - The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.\n * Harvey - Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.\n * Gus - A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.\n * Morris - A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.\n"
+    },
+    {
+        "role": "user",
+        "content": "go south"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Beach Beach"
+    },
+    {
+        "role": "assistant",
+        "content": "BEACH\nThe beach is a relaxing spot for many tourists, sitting at the edge of the great lake. The white beach stretches for miles, and sand washes away easily when someone jumps in the lake to find relief from the hot sun. Romantic couples like to watch the moon rise over the lake.\nExits:\n * North to Town\n\nYou see:\n * Sand Pail - A small, plastic pail designed for playing in the sand.\n * Sun Hat - A wide-brimmed hat designed to protect from the sun's harsh rays.\n * Picnic Blanket - A large blanket perfect for picnics or lounging on the beach.\n * Lifeguard Buoy - A large, orange buoy used by lifeguards for rescue purposes.\n\n"
+    },
+    {
+        "role": "user",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "go north"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Town Town"
+    },
+    {
+        "role": "assistant",
+        "content": "TOWN\nTown is a bustling place on any given day.  With a farmer's market square in the center, there are a few stores and clinics set up as well.   It's a simple setup, a few dirt packing roads web about through some woods leading deeper into the town.  People can be seen visiting, walking or peddling to and from their favorite places in town.\nExits:\n * West to Farm\n * South to Beach\n * North to Mountain\n\nYou see:\n * Homemade Pie - A fresh, delicious pie cooked by the local bakery.\n * Watering Can - A sturdy metal watering can\n * Map of the Local Market - A detailed map of the farmer's market square.\n * Sack of Fresh Vegetables - A sack full of locally grown vegetables.\n * Farmhouse Door Key - A small, shiny key. Probably for the door of one of the farmhouses nearby.\nCharacters:\n * Pierre - The friendly and hard-working owner of the local store, always willing to make small talk as you make your purchase.\n * Harvey - Harvey is a slightly awkward man who works at the local clinic. He's there to help with any health concerns the locals might have.\n * Gus - A jolly man running the local Star saloon. Always up for a good talk over a mug of tea.\n * Morris - A big, abrasive man who owns the JojaMart chain. He may not be well-liked, but his store is a one-stop-shop for anything the locals need.\n"
+    },
+    {
+        "role": "user",
+        "content": "go west"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Farm Farm"
+    },
+    {
+        "role": "assistant",
+        "content": "FARM\nThe farm consists of a large wheat field with a few silos, barns and scarecows visible. Near the entrance of the farm, little patches of flowers are seen. The chickens sheds are kept far from the main buildings for obvious reason.\nExits:\n * East to Town\n * South to Forest\n\nYou see:\n * Wheat Bundle - A beautifully harvested bundle of wheat.\n * Farmers Tools - A set of robust, iron farming tools.\n * Chicken Egg - A fresh, hen-laid chicken egg.\n * Potters Pot - A large, clay pot meant for making pottery.\n\n"
+    },
+    {
+        "role": "user",
+        "content": "go south"
+    },
+    {
+        "role": "assistant",
+        "content": "Kim moved to Forest Forest"
+    },
+    {
+        "role": "assistant",
+        "content": "FOREST\nThe forest appears like a living thing to some as the wind sways the tree limbs all directions.  There is a red fox near by foraging for food, skittish at the humans nearby.  The ground is covered with dead leaves and branches.\nExits:\n * North to Farm\n\nYou see:\n * Ancient Oak Staff - A staff made from the wood of an old oak tree.\n * Fox Frond - A wild sprig of Fox Frond.\n * Fallen Acorn - A single, nut brown acorn. It's been separated from its tree.\n * Mystical Altar - A mysterious stone alter hidden in the forest.\nCharacters:\n * Wizard - The Wizard is a wise and old magician who lives alone in the tower. He is known for his great wisdom and the magical powers he possesses.\n"
+    },
+    {
+        "role": "user",
+        "content": "quit"
+    },
+    {
+        "role": "assistant",
+        "content": "Game Over."
+    }
+]
